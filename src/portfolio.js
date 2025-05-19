@@ -176,7 +176,7 @@ const workExperiences = {
     {
       role: "Student Professional Worker Information Technology",
       company: "Agricultural Commissioner Weights and Measures",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/acwmlogo.png"),
       date: "March 2024 – Present",
       desc: "Performs a wide-range of technical support duties including configuration of computers, printers, and installation of equipment and applications software, simple maintenance and repair of computers and printers, and identification and resolution of computer hardware and software problems.",
       descBullets: [
@@ -189,8 +189,7 @@ const workExperiences = {
       company: "The Home Depot",
       companylogo: require("./assets/images/hdLogo.png"),
       date: "May 2016- Current",
-      desc: "•	Provide fast friendly service by actively seeking out customers and assessing their needs and provide assistance.Apply Product Knowledge to better inform customers on the product we sell.Greet Engage and Thank customers for their business. Operate forklifts and perform critical functions for maintaining proper on-hands and pricing for our customers. 
-"
+      desc: "Provide fast friendly service by actively seeking out customers and assessing their needs and provide assistance.Apply Product Knowledge to better inform customers on the product we sell.Greet Engage and Thank customers for their business. Operate forklifts and perform critical functions for maintaining proper on-hands and pricing for our customers."
     },
     {
       role: "Software Engineer Intern",
