@@ -126,14 +126,14 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
-      subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      schoolName: "California State University, Dominguez Hills",
+      logo: require("./assets/images/csudhLogo.png"),
+      subHeader: "Bachelors of Science in Computer Science",
+      duration: "September 2022 - May 2025",
+      desc: "Participated in the breast cancer research using Machine Learning Algorithms",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Breast Cancer Prognosis: Machine Learning Survival Prediction",
+        "Predicting Crypto Market Trends Using Machine Learning Models"
       ]
     },
     {
@@ -176,7 +176,7 @@ const workExperiences = {
     {
       role: "Student Professional Worker Information Technology",
       company: "Agricultural Commissioner Weights and Measures",
-      companylogo: require("./assets/images/acwmlogo.png"),
+      companylogo: require("./assets/images/acwmLogo.png"),
       date: "March 2024 – Present",
       desc: "Performs a wide-range of technical support duties including configuration of computers, printers, and installation of equipment and applications software, simple maintenance and repair of computers and printers, and identification and resolution of computer hardware and software problems.",
       descBullets: [
@@ -350,7 +350,7 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Twitch 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "I LOVE TO TALK ABOUT GAMING, MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
@@ -365,6 +365,9 @@ const resumeSection = {
   subtitle: "Feel free to download my resume",
 
   // Please Provide with Your Podcast embeded Link
+  podcast: [
+    "https://docs.google.com/document/d/1Cg-X-n88zRp-oLpwjpaMMOJLFuvih6cg/edit?usp=drive_link&ouid=117206428820309688680&rtpof=true&sd=true"
+  ]
   display: true // Set false to hide this section, defaults to true
 };
 
