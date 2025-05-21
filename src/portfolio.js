@@ -49,7 +49,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -108,6 +108,10 @@ https://fontawesome.com/icons?d=gallery */
       skillName: "firebase",
       fontAwesomeClassname: "fas fa-fire"
     },
+     {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
@@ -137,12 +141,12 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
-      logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
+      schoolName: "East Los Angeles College",
+      logo: require("./assets/images/elacLogo.jpg"),
+      subHeader: "Associates in Arts in Computer Science \n Associates in Arts in Mathematics \n Associates in Arts General Studies: Social and Behavioral Sciences",
+      duration: "September 2017 - December 2021",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      descBullets: ["Learned invaluable problem solving skills"]
     }
   ]
 };
@@ -192,11 +196,11 @@ const workExperiences = {
       desc: "Provide fast friendly service by actively seeking out customers and assessing their needs and provide assistance.Apply Product Knowledge to better inform customers on the product we sell.Greet Engage and Thank customers for their business. Operate forklifts and perform critical functions for maintaining proper on-hands and pricing for our customers."
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Operations Supervisor",
+      company: "United Parcel Service",
+      companylogo: require("./assets/images/upsLogo.jpg"),
+      date: "Sept 2008 – Jan 2015",
+      desc: "Impacts the organization by contributing to the continued growth and profitability of UPS by maintaining the highest standards for account productivity, accuracy, customer service, organization, communication, cooperation, and safety."
     }
   ]
 };
@@ -213,28 +217,39 @@ const openSource = {
 
 const bigProjects = {
   title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  subtitle: "Real World Projects and University Projects based on Machine Learning Algorithms",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/acwmLogo.png"),
+      projectName: "Windows 11 Autopilot Rollout",
+      projectDesc: "Automated the zero-touch, in-place upgrade of county workstations to Windows 11 using Microsoft Intune Autopilot, slashing deployment time while enforcing standardized, policy-compliant device provisioning",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "https://acwm.lacounty.gov/"
+        }
+      ]
+    },
+    {
+      image: require("./assets/images/aiCampusLogo.png"),
+      projectName: "Breast Cancer Prognosis: Machine Learning Survival Prediction",
+      projectDesc: "This study aims to develop a binary classification model to predict breast cancer survival effectively, influencing clinical decisions significantly.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://cedars.nationalcampus.ai/project/31/"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/cryptoLogo.png"),
+      projectName: "Predicting Crypto Market Trends Using Machine Learning Models",
+      projectDesc: "Leverages machine learning models to perform binary classification on social media content predicting whether cryptocurrency prices will rise or fall within a specified timeframe",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://nextu.se/"
+          url: "https://github.com/ogarcia138/predictingCryptoMarketTrends-"
         }
       ]
     }
@@ -252,51 +267,71 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Associates in Arts Degrees",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Attained my AA in Computer Science, Mathematics, and General Studies",
+      image: require("./assets/images/elacLogo2.png"),
+      imageAlt: "ELAC Husky",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
+          name: "Degrees",
+          url: "/AA_Degrees_OmarG.pdf"
+         }
+        // {
+        //   name: "Award Letter",
+        //   url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
+        // },
+        // {
+        //   name: "Google Code-in Blog",
+        //   url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+        // }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Bachelors of Science in Computer Science",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "Completed a B.S. in Computer Science with a focus on full-stack development, data science, and cloud technologies, graduated May 2025 with honors.",
+      descBullets: [
+        "Senior Project: Cancer-genomics ML pipeline—RNA-Seq preprocessing, survival XGBoost, SHAP interpretation",
+        "Key coursework: Data Structures & Algorithms, Operating Systems, Software Engineering, AI & ML, Cloud Computing",
+        "Tools & tech: Java • Python • React • Node • AWS • Docker • Git/GitHub • Linux",
+        "CSUDH ACM chapter Workshop presenter & hackathon volunteer",
+        "Graduated magna cum laude (GPA 3.8/4.0)"
+],
+        image: require("./assets/images/csudhLogo2.png"),
+      imageAlt: "CSUDH Toro Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "View Bachelors Degree",
+          url: ""
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Home Depot Bravo's",
+      subtitle: "Excellent Customer Service Badges",
+      image: require("./assets/images/hdLogo.png"),
+      imageAlt: "Home Depot Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "Awards", url: "/hd_bravoAwards_OmarGarcia.pdf"},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
+      ]
+    },
+    {
+      title: "AWS Certified Cloud Practitioner",
+      subtitle: "Completed Certification from AWS",
+      image: require("./assets/images/awsLogo.jpg"),
+      imageAlt: "AWS Logo",
+      footerLink: [
+        {name: "Certification", url: "/AWS_CCP_certificate_OG.pdf"},
+        // {
+        //   name: "Final Project",
+        //   url: "https://pakistan-olx-1.firebaseapp.com/"
+        // }
       ]
     }
   ],
@@ -367,7 +402,7 @@ const resumeSection = {
   // Please Provide with Your Podcast embeded Link
   podcast: [
     "https://docs.google.com/document/d/1Cg-X-n88zRp-oLpwjpaMMOJLFuvih6cg/edit?usp=drive_link&ouid=117206428820309688680&rtpof=true&sd=true"
-  ]
+  ],
   display: true // Set false to hide this section, defaults to true
 };
 
