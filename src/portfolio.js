@@ -384,12 +384,14 @@ const talkSection = {
 // Podcast Section
 
 const podcastSection = {
-  title: emoji("Twitch 🎙️"),
+  title: emoji("Twitch 🎮"),
   subtitle: "I LOVE TO TALK ABOUT GAMING, MYSELF AND TECHNOLOGY",
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://www.twitch.tv/paraphernilia"
+    "https://player.twitch.tv/?channel=paraphernilia"
+    + "&parent=localhost" 
+    + "&parent=omargarcia.dev"
   ],
   display: true // Set false to hide this section, defaults to true
 };
