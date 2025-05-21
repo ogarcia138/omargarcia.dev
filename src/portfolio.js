@@ -23,7 +23,7 @@ const greeting = {
   username: "Omar Garcia",
   title: "Hi all, I'm Omar Garcia",
   subTitle: emoji(
-    "A passionate IT Professional, Computer Science Graduate, and a Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate IT Professional, Computer Science Graduate, and a Full Stack Software Developer 🚀 having an experience of building Web,Mobile, and backend applications with Java/ Python/ JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1Cg-X-n88zRp-oLpwjpaMMOJLFuvih6cg/edit?usp=drive_link&ouid=117206428820309688680&rtpof=true&sd=true", // Set to empty to hide the button
@@ -137,7 +137,9 @@ const educationInfo = {
       desc: "Participated in the breast cancer research using Machine Learning Algorithms",
       descBullets: [
         "Breast Cancer Prognosis: Machine Learning Survival Prediction",
-        "Predicting Crypto Market Trends Using Machine Learning Models"
+        "Predicting Crypto Market Trends Using Machine Learning Models",
+        "Key coursework: Data Structures & Algorithms, Operating Systems, Software Engineering, AI & ML, Cloud Computing",
+        "Tools & tech: Java • Python • React • Node • AWS • Docker • Git/GitHub • Linux",
       ]
     },
     {
