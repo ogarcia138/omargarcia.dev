@@ -23,7 +23,7 @@ const greeting = {
   username: "Omar Garcia",
   title: "Hi all, I'm Omar Garcia",
   subTitle: emoji(
-    "A passionate IT Professional, Computer Science Graduate, and a Full Stack Software Developer 🚀 having an experience of building Web,Mobile, and backend applications with Java/ Python/ JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate IT Professional, Computer Science Graduate, and a Full Stack Software Developer 🚀 having an experience of building Web,Mobile, and backend applications with Java/ Python/ JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks. This very portfolio is served from an AWS EC2 Ubuntu instance fronted by Nginx, built with React and Node, and delivered over HTTPS with Let’s Encrypt—giving me full-stack control from code to cloud."
   ),
   resumeLink:
     "https://docs.google.com/document/d/1Cg-X-n88zRp-oLpwjpaMMOJLFuvih6cg/edit?usp=drive_link&ouid=117206428820309688680&rtpof=true&sd=true", // Set to empty to hide the button
