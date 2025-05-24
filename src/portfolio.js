@@ -277,7 +277,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Degrees",
-          url: "/AA_Degrees_OmarGarcia.pdf"
+          url: "/AA_Degrees_OmarGarcia1.pdf"
          }
         // {
         //   name: "Award Letter",
@@ -316,7 +316,7 @@ const achievementSection = {
       image: require("./assets/images/hdLogo.png"),
       imageAlt: "Home Depot Logo",
       footerLink: [
-        {name: "Awards", url: "/hd_bravoAwards_OmarGarcia.pdf"},
+        {name: "Awards", url: "/hd_bravoAwards_OmarGarcia1.pdf"},
         // {
         //   name: "Final Project",
         //   url: "https://pakistan-olx-1.firebaseapp.com/"
@@ -329,7 +329,7 @@ const achievementSection = {
       image: require("./assets/images/awsLogo.jpg"),
       imageAlt: "AWS Logo",
       footerLink: [
-        {name: "Certification", url: "/AWS_CCP_certificate_OG.pdf"},
+        {name: "Certification", url: "/AWS_CCP_certificate_OG1.pdf"},
         // {
         //   name: "Final Project",
         //   url: "https://pakistan-olx-1.firebaseapp.com/"
