@@ -277,7 +277,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Degrees",
-          url: "/AA_Degrees_OmarGarcia1.pdf"
+          url: "https://drive.google.com/file/d/1nl5e9zIs-LANyIWIR7HI3ezahNL1D8ja/view?usp=sharing"
          }
         // {
         //   name: "Award Letter",
