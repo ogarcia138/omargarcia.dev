@@ -277,7 +277,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "Degrees",
-          url: "/AA_Degrees_OmarG.pdf"
+          url: "/AA_Degrees_OmarGarcia.pdf"
          }
         // {
         //   name: "Award Letter",
