@@ -292,7 +292,7 @@ const achievementSection = {
     {
       title: "Bachelors of Science in Computer Science",
       subtitle:
-        "Completed a B.S. in Computer Science with a focus on full-stack development, data science, and cloud technologies, graduated May 2025 with honors.",
+        "Completed a B.S. in Computer Science with a focus on full-stack development, data science, and cloud technologies, graduated May 2025 with departmental honors.",
       descBullets: [
         "Senior Project: Cancer-genomics ML pipeline—RNA-Seq preprocessing, survival XGBoost, SHAP interpretation",
         "Key coursework: Data Structures & Algorithms, Operating Systems, Software Engineering, AI & ML, Cloud Computing",
