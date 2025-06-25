@@ -305,7 +305,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Bachelors Degree",
-          url: ""
+          url: "https://drive.google.com/file/d/1cFgSD5ZnmuQJd2Q5RvvrrGv4ZDjlQz5d/view?usp=sharing"
         }
       ]
     },
