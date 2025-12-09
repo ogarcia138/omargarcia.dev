@@ -26,7 +26,7 @@ const greeting = {
     "A passionate IT Professional, Computer Science Graduate, and a Full Stack Software Developer 🚀 having an experience of building Web,Mobile, and backend applications with Java/ Python/ JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks. This very portfolio is served from an AWS EC2 Ubuntu instance fronted by Nginx, built with React and Node, and delivered over HTTPS with Let’s Encrypt—giving me full-stack control from code to cloud."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1boXePV1xn0YGoIBbKfQHE5Kwx4KfWANc/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1nCtADsftnF8syrHdk7UEbKhhN-W5igeS/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -180,10 +180,23 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Helpdesk Technician",
+      company: "Be Structured Technology Group",
+      companylogo: require("./assets/images/bstgLogo.png"),
+      date: "Oct 2025 – Present",
+      desc: "Provide end-user support manage day-to-day troubleshooting, and perform light administrative tasks such as account management, system configuration, and basic M365/Intune administration",
+      descBullets: [
+        "Utilize Kaseya Stack, including Datto RMM and Datto EDR, to monitor systems, deploy updates, run remote jobs, and remediate alerts efficiently",
+        "Manage ticket workloads through Autotask, ensuring timely follow-ups, clear communication, and thorough resolution notes.",
+        "Assist with workstation deployments, software installs, printer setups, and device configuration for client environments.",
+        "Document troubleshooting steps, resolutions, and client-specific procedures in IT Glue to maintain accurate and scalable knowledge bases."
+      ]
+    },
+    {
       role: "Student Professional Worker Information Technology",
       company: "Agricultural Commissioner Weights and Measures",
       companylogo: require("./assets/images/acwmLogo.png"),
-      date: "March 2024 – Present",
+      date: "March 2024 – August 2025",
       desc: "Performs a wide-range of technical support duties including configuration of computers, printers, and installation of equipment and applications software, simple maintenance and repair of computers and printers, and identification and resolution of computer hardware and software problems.",
       descBullets: [
         "Creates, modifies, or maintains simple applications/databases for data, such as training information, budget or departmental data as needed",
@@ -194,7 +207,7 @@ const workExperiences = {
       role: "Sales Associate/Freight Associate",
       company: "The Home Depot",
       companylogo: require("./assets/images/hdLogo.png"),
-      date: "May 2016- Current",
+      date: "May 2016- Oct 2025",
       desc: "Provide fast friendly service by actively seeking out customers and assessing their needs and provide assistance.Apply Product Knowledge to better inform customers on the product we sell.Greet Engage and Thank customers for their business. Operate forklifts and perform critical functions for maintaining proper on-hands and pricing for our customers."
     },
     {
