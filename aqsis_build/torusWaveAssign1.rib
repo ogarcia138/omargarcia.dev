@@ -1,0 +1,117 @@
+#Author:  Omar Garcia
+#Date: 03/08/25
+#Purpose: Assignment 1 Torus Wave CSC 461
+
+#torusWaveAssign1
+Display "torusWaveAssign1.tiff" "file" "rgb"
+
+#Image resolution 640x480
+Format 640 480 1
+#High Quality anti-aliasing
+PixelSamples 4 4
+
+Option "limits" "eyesplits" [8192000]
+ShadingRate 20
+
+#Adjust Brightness and gamma correction
+Exposure 1.1 2.3
+
+#Camera setup
+Projection "perspective" "fov" [45] #Set camera with 45 degree fov
+
+#Begin defining objects and lighting
+WorldBegin
+	#Produce lighting for the scene
+	LightSource "ambientlight" 1 "intensity" [0.07]
+	LightSource "distantlight" 1 
+	"from" [-6 2 4] 
+	"to" [1 -1 -1] 
+	"intensity" [3.0]
+
+	#Add surface to the objects
+	Surface "plastic"
+	"Ka" [1]
+	"Kd" [0.5]
+	"Ks" [0.5]
+	"roughness" [0.1]
+	"specularcolor" [1 1 1]
+
+	# #Add a sphere at the center
+	AttributeBegin
+		Color [0.0 0.5 0.2]
+		Translate 0 0 3.8
+		Rotate 60 .8 0 0
+		Sphere 0.055 -0.055 0 235
+	AttributeEnd
+
+	#Generate torus wave effect
+	AttributeBegin
+		Color [0.0 0.5 0.2]
+
+		#Torus 1
+		AttributeBegin
+			Translate 0 0 3.8
+			Scale 1 1 1
+			Rotate 60 .8 0 0
+			Torus 0.15 0.1 0 180 235
+		AttributeEnd
+
+		#Torus 2
+		AttributeBegin
+			Translate 0 0 3.8
+			Scale 1 1 1 
+			Rotate 60 .8 0 0
+			Torus 0.35 0.1 0 -180 235
+		AttributeEnd
+
+		#Torus 3
+		AttributeBegin
+			Translate 0 0 3.8
+			Scale 1 1 1
+			Rotate 60 .8 0 0
+			Torus 0.55 0.1 0 180 235
+		AttributeEnd
+
+		# #Torus 4
+		AttributeBegin
+			Translate 0 0 3.8
+			Scale 1 1 1
+			Rotate 60 .8 0 0
+			Torus 0.75 0.1 0 -180 235
+		AttributeEnd
+
+		# #Torus 5
+		AttributeBegin
+			Translate 0 0 3.8
+			Scale 1 1 1
+			Rotate 60 .8 0 0
+			Torus 0.95 0.1 0 180 235
+		AttributeEnd
+	
+		# #Torus 6
+		AttributeBegin
+			Translate 0 0 3.8
+			Scale 1 1 1
+			Rotate 60 .8 0 0
+			Torus 1.15 0.1 0 -180 235
+		AttributeEnd
+
+		# #Torus 7
+		AttributeBegin
+			Translate 0 0 3.8
+			Scale 1 1 1
+			Rotate 60 .8 0 0
+			Torus 1.35 0.1 0 180 235
+		AttributeEnd
+
+		# #Torus 8
+		AttributeBegin
+			Translate 0 0 3.8
+			Scale 1 1 1
+			Rotate 60 .8 0 0
+			Torus 1.55 0.1 0 -180 235
+		AttributeEnd
+
+	AttributeEnd #end transformations for the tori
+
+WorldEnd

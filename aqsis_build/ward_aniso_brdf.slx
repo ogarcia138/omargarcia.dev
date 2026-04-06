@@ -1,0 +1,170 @@
+surface
+AQSIS_V 2
+
+
+segment Data
+
+USES 461602
+
+param uniform  float u_roughness
+param uniform  float v_roughness
+param uniform  color specular_color
+varying  normal Nn
+varying  vector V
+varying  vector T
+varying  vector B
+varying  color result
+varying  vector b0::L
+varying  vector b0::H
+varying  float b0::NdotL
+varying  float b0::NdotV
+varying  float b0::NdotH
+varying  float b0::HdotT
+varying  float b0::HdotB
+varying  float b0::exponent
+varying  float b0::denom
+varying  float b0::D
+
+
+segment Init
+	pushif 0.300000012
+	pop u_roughness
+	pushif 0.300000012
+	pop v_roughness
+	pushif 1
+	pushif 1
+	pushif 1
+	settc
+	pop specular_color
+
+
+segment Code
+	pushv N
+	normalize
+	pop Nn
+	pushv I
+	negp
+	normalize
+	pop V
+	pushv dPdu
+	normalize
+	pop T
+	pushv T
+	pushv N
+	crspp
+	normalize
+	pop B
+	pushif 0
+	setfc
+	pop result
+	pushv Nn
+	pushv P
+	init_illuminance2
+	jz 1
+:0
+	S_CLEAR
+	pushif 2
+	pushif 3.14159274
+	divff
+	pushv Nn
+	pushv P
+	pushis ""
+	illuminance2
+	S_JZ 2
+	RS_PUSH
+	RS_GET
+	pushv L
+	normalize
+	pop b0::L
+	pushv V
+	pushv b0::L
+	addpp
+	normalize
+	pop b0::H
+	pushv b0::L
+	pushv Nn
+	dotpp
+	pushif 0
+	pushif 0
+	max
+	pop b0::NdotL
+	pushv V
+	pushv Nn
+	dotpp
+	pushif 0
+	pushif 0
+	max
+	pop b0::NdotV
+	pushv b0::H
+	pushv Nn
+	dotpp
+	pushif 9.99999975e-06
+	pushif 0
+	max
+	pop b0::NdotH
+	pushv T
+	pushv b0::H
+	dotpp
+	pop b0::HdotT
+	pushv B
+	pushv b0::H
+	dotpp
+	pop b0::HdotB
+	pushv b0::NdotH
+	pushv b0::NdotH
+	mulff
+	pushv v_roughness
+	pushv v_roughness
+	mulff
+	pushv b0::HdotB
+	pushv b0::HdotB
+	mulff
+	divff
+	pushv u_roughness
+	pushv u_roughness
+	mulff
+	pushv b0::HdotT
+	pushv b0::HdotT
+	mulff
+	divff
+	addff
+	negf
+	divff
+	pop b0::exponent
+	pushv b0::NdotV
+	pushv b0::NdotL
+	mulff
+	sqrt
+	pushv v_roughness
+	pushv u_roughness
+	pushif 3.14159274
+	pushif 4
+	mulff
+	mulff
+	mulff
+	mulff
+	pop b0::denom
+	pushv b0::denom
+	pushv b0::exponent
+	exp
+	divff
+	pop b0::D
+	pushv b0::NdotL
+	setfc
+	pushv b0::D
+	setfc
+	pushv specular_color
+	mulcc
+	mulcc
+	pushv result
+	addcc
+	pop result
+	RS_POP
+:2
+	advance_illuminance
+	jnz 0
+:1
+	pushv result
+	pop Ci
+	pushv Os
+	pop Oi

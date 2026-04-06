@@ -1,0 +1,46 @@
+surface
+AQSIS_V 2
+
+
+segment Data
+
+USES 460803
+
+param uniform  float Kd
+param uniform  float Ka
+varying  float d
+
+
+segment Init
+	pushif 0.800000012
+	pop Kd
+	pushif 0.200000003
+	pop Ka
+
+
+segment Code
+	pushv N
+	normalize
+	pushv I
+	normalize
+	dotpp
+	pop d
+	pushv d
+	pushv d
+	mulff
+	pop d
+	pushv d
+	pushif 1
+	subff
+	pushv Kd
+	mulff
+	pushv Ka
+	addff
+	setfc
+	pushv Cs
+	pushv Os
+	mulcc
+	mulcc
+	pop Ci
+	pushv Os
+	pop Oi

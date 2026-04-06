@@ -1,0 +1,211 @@
+surface
+AQSIS_V 2
+
+
+segment Data
+
+USES 461062
+
+varying  float wardSpecular1::exponent
+varying  float wardSpecular1::denom
+param uniform  color specular_color
+param uniform  float u_r
+param uniform  float v_r
+param uniform  color diffuse_color
+varying  normal Nf
+varying  vector V
+varying  vector Tu
+varying  vector Tv
+varying  color result
+varying  vector b3::L
+varying  color b3::Cl
+varying  float b3::cosNi
+varying  float b3::cosNr
+varying  vector b3::H
+varying  float b3::cosNu
+varying  float b3::cosNv
+varying  float b3::spec
+varying  color b3::diff
+
+
+segment Init
+	pushif 1
+	setfc
+	pop specular_color
+	pushif 0.25
+	pop u_r
+	pushif 0.5
+	pop v_r
+	pushif 0.5
+	setfc
+	pop diffuse_color
+
+
+segment Code
+	pushv I
+	pushv N
+	normalize
+	faceforward
+	pop Nf
+	pushv I
+	normalize
+	negp
+	pop V
+	S_CLEAR
+	pushif 0.99000001
+	pushif 0
+	pushif 1
+	pushif 0
+	settv
+	pushv Nf
+	dotpp
+	abs
+	lsff
+	S_GET
+	RS_PUSH
+	RS_GET
+	RS_JZ 1
+	pushif 0
+	pushif 1
+	pushif 0
+	settv
+	pushv Nf
+	external "cross" "v" "nv"
+	normalize
+	pop Tu
+:1
+	RS_INVERSE
+	RS_JZ 0
+	pushif 0
+	pushif 0
+	pushif 1
+	settv
+	pushv Nf
+	external "cross" "v" "nv"
+	normalize
+	pop Tu
+:0
+	RS_POP
+	pushv Nf
+	pushv Tu
+	external "cross" "v" "vn"
+	normalize
+	pop Tv
+	pushif 0
+	setfc
+	pop result
+	pushv Nf
+	pushv P
+	init_illuminance2
+	jz 3
+:2
+	S_CLEAR
+	pushif 2
+	pushif 3.14159274
+	divff
+	pushv Nf
+	pushv P
+	pushis ""
+	illuminance2
+	S_JZ 4
+	RS_PUSH
+	RS_GET
+	pushis "__lightdir"
+	lightsource b3::L
+	drop
+	pushis "__lightcolor"
+	lightsource b3::Cl
+	drop
+	pushv b3::L
+	normalize
+	pushv Nf
+	dotpp
+	pushif 0
+	pushif 0
+	max
+	pop b3::cosNi
+	pushv V
+	pushv Nf
+	dotpp
+	pushif 0
+	pushif 0
+	max
+	pop b3::cosNr
+	pushv V
+	pushv b3::L
+	normalize
+	addpp
+	normalize
+	pop b3::H
+	pushv b3::H
+	pushv Tu
+	dotpp
+	pop b3::cosNu
+	pushv b3::H
+	pushv Tv
+	dotpp
+	pop b3::cosNv
+	pushv b3::cosNr
+	pushv b3::cosNi
+	mulff
+	pushv v_r
+	pushv v_r
+	mulff
+	pushv b3::cosNv
+	pushv b3::cosNv
+	mulff
+	divff
+	pushv u_r
+	pushv u_r
+	mulff
+	pushv b3::cosNu
+	pushv b3::cosNu
+	mulff
+	divff
+	addff
+	negf
+	divff
+	pop wardSpecular1::exponent
+	pushv b3::cosNr
+	pushv b3::cosNi
+	mulff
+	sqrt
+	pushv v_r
+	pushv u_r
+	pushif 3.14159274
+	pushif 4
+	mulff
+	mulff
+	mulff
+	mulff
+	pop wardSpecular1::denom
+	pushv wardSpecular1::denom
+	pushv wardSpecular1::exponent
+	exp
+	divff
+	pop b3::spec
+	pushv b3::cosNi
+	setfc
+	pushv diffuse_color
+	mulcc
+	pop b3::diff
+	pushv b3::spec
+	setfc
+	pushv specular_color
+	mulcc
+	pushv b3::diff
+	addcc
+	pushv b3::Cl
+	mulcc
+	pushv result
+	addcc
+	pop result
+	RS_POP
+:4
+	advance_illuminance
+	jnz 2
+:3
+	pushv result
+	pop Ci
+	pushv Os
+	pop Oi

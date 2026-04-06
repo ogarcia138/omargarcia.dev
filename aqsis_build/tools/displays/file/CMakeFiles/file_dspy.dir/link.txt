@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fopenmp -O3 -DNDEBUG -shared  -o file_dspy.so CMakeFiles/file_dspy.dir/display.cpp.o CMakeFiles/file_dspy.dir/__/dspyutil/dspyhlpr.c.o  -Wl,-rpath,::::::::::: /usr/lib/x86_64-linux-gnu/libtiff.so 

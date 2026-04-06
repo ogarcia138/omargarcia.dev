@@ -1,0 +1,39 @@
+displacement
+AQSIS_V 2
+
+
+segment Data
+
+USES 51456
+
+param uniform  float Km
+param uniform  string texturename
+varying  float amp
+
+
+segment Init
+	pushif 1
+	pop Km
+	pushis ""
+	pop texturename
+
+
+segment Code
+	pushv t
+	pushv s
+	pushv texturename
+	pushif 0
+	ftexture2
+	pushv Km
+	mulff
+	pop amp
+	pushv N
+	normalize
+	pushv amp
+	mulfp
+	pushv P
+	addpp
+	pop P
+	pushv P
+	calculatenormal
+	pop N

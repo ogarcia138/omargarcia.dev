@@ -1,0 +1,12 @@
+-I/home/ogarcia138/aqsis/include
+-I/home/ogarcia138/aqsis_build/include
+-I/usr/include
+-I/usr/include
+-I/usr/include/OpenEXR
+-I/usr/include
+-I/home/ogarcia138/aqsis/thirdparty/partio/src/src/lib
+-I/home/ogarcia138/aqsis/libs/pointrender
+-DPARTIO_USE_ZLIB
+-o
+/home/ogarcia138/aqsis_build/tools/ptview/moc_ptview.cpp
+/home/ogarcia138/aqsis/tools/ptview/ptview.h

@@ -1,0 +1,51 @@
+# model1.rib
+Format 640 480 1
+Display "model1.tiff" "file" "rgb" 
+Projection "perspective" "fov" [45]
+
+WorldBegin
+   
+   LightSource "distantlight" "right"
+       "to" [1 0 0]
+       "intensity" [ 1.5 ]
+           
+   LightSource "distantlight" "left"
+       "to" [-1 0 0]
+       "intensity" [ 1.5 ]
+       
+#   LightSource "distantlight" "top"
+#       "to" [0 1 0]
+#       "intensity" [ 1 ]
+           
+#   LightSource "distantlight" "bottom"
+#       "to" [0 -1 0]
+#       "intensity" [ 1 ]
+ 
+   Translate 0 0 5
+
+   Color [ 1 0 0 ]
+   Opacity [ 1 1 1 ]
+   
+   # for our shader the following are options for the BRDF model
+   # 1 - diffuse only
+   # 2 - specular only using H
+   # 3 - specular only using R
+   # 4 - plastic using H
+   # 5 - plastic using R (default)
+
+   AttributeBegin
+#      Color [ 1 1 1 ]
+      Surface "asg2shader" "float model" [1] "float roughness" [0.60] "color specularcolor" [1 1 1]
+#      Surface "plastic" "color specularcolor" [ 1 1 1 ]
+      Translate -1.2 0  0
+      Sphere 1 -1 1 360
+   AttributeEnd
+   
+   AttributeBegin
+      Surface "plastic"
+      Translate 1.2 0  0
+      Sphere 1 -1 1 360
+   AttributeEnd
+WorldEnd
+
+

@@ -1,0 +1,8 @@
+-I/home/ogarcia138/aqsis/include
+-I/home/ogarcia138/include
+-I/mnt/c/Users/oiler/anaconda3/Library/include
+-I/home/ogarcia138/aqsis/thirdparty/tinyxml
+-DTIXML_USE_STL
+-o
+/home/ogarcia138/tools/piqsl/moc_imagelistmodel.cpp
+/home/ogarcia138/aqsis/tools/piqsl/imagelistmodel.h

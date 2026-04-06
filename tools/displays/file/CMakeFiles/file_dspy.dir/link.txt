@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fopenmp -O3 -DNDEBUG -shared  -o file_dspy.so CMakeFiles/file_dspy.dir/display.cpp.o CMakeFiles/file_dspy.dir/__/dspyutil/dspyhlpr.c.o   -L/mnt/c/Users/oiler/anaconda3/Library/lib  -Wl,-rpath,/mnt/c/Users/oiler/anaconda3/Library/lib: /usr/lib/x86_64-linux-gnu/libtiff.so 

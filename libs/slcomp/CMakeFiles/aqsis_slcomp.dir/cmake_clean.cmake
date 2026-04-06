@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  ".1"
+  "CMakeFiles/aqsis_slcomp.dir/backend/codegengraphviz.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/backend/codegengraphviz.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/backend/codegenvm.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/backend/codegenvm.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/backend/parsetreeviz.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/backend/parsetreeviz.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/backend/vmdatagather.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/backend/vmdatagather.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/backend/vmoutput.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/backend/vmoutput.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/parse/funcdef.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/parse/funcdef.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/parse/libslparse.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/parse/libslparse.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/parse/optimise.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/parse/optimise.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/parse/parsenode.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/parse/parsenode.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/parse/parser.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/parse/parser.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/parse/scanner.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/parse/scanner.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/parse/typecheck.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/parse/typecheck.cpp.o.d"
+  "CMakeFiles/aqsis_slcomp.dir/parse/vardef.cpp.o"
+  "CMakeFiles/aqsis_slcomp.dir/parse/vardef.cpp.o.d"
+  "libaqsis_slcomp.pdb"
+  "libaqsis_slcomp.so"
+  "libaqsis_slcomp.so.1"
+  "libaqsis_slcomp.so.1.8"
+  "parse/parser.cpp"
+  "parse/parser.hpp"
+  "parse/scanner.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/aqsis_slcomp.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

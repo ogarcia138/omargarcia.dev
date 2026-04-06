@@ -1,0 +1,6 @@
+-I/home/ogarcia138/aqsis/include
+-I/home/ogarcia138/include
+-I/mnt/c/Users/oiler/anaconda3/Library/include
+-o
+/home/ogarcia138/tools/eqsl/moc_eqsl.cpp
+/home/ogarcia138/aqsis/tools/eqsl/eqsl.h

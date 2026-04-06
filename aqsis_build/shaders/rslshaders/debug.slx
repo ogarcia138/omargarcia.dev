@@ -1,0 +1,26 @@
+surface
+AQSIS_V 2
+
+
+segment Data
+
+USES 393218
+
+uniform  color c
+
+
+segment Init
+
+
+segment Code
+	frandom
+	frandom
+	frandom
+	settc
+	pop c
+	pushv Os
+	pop Oi
+	pushv c
+	pushv Os
+	mulcc
+	pop Ci

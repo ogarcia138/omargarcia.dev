@@ -1,0 +1,6 @@
+-I/home/ogarcia138/aqsis/include
+-I/home/ogarcia138/aqsis_build/include
+-I/usr/include
+-o
+/home/ogarcia138/aqsis_build/tools/eqsl/moc_eqsl.cpp
+/home/ogarcia138/aqsis/tools/eqsl/eqsl.h

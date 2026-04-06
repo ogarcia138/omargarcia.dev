@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fopenmp -O3 -DNDEBUG -shared  -o xpm_dspy.so CMakeFiles/xpm_dspy.dir/xpm.cpp.o CMakeFiles/xpm_dspy.dir/aspXpm.cpp.o  -Wl,-rpath,::::::::::: 

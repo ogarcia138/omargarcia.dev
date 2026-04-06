@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -fopenmp -O3 -DNDEBUG -shared  -o bmp_dspy.so CMakeFiles/bmp_dspy.dir/d_sdcBMP.cpp.o   -L/mnt/c/Users/oiler/anaconda3/Library/lib  -Wl,-rpath,:::::::::::::: 
