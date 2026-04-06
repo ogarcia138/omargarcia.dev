@@ -26,7 +26,7 @@ const greeting = {
     "A passionate IT Professional, Computer Science Graduate, and a Full Stack Software Developer 🚀 having an experience of building Web,Mobile, and backend applications with Java/ Python/ JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks. This very portfolio is served from an AWS EC2 Ubuntu instance fronted by Nginx, built with React and Node, and delivered over HTTPS with Let’s Encrypt—giving me full-stack control from code to cloud."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1nCtADsftnF8syrHdk7UEbKhhN-W5igeS/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1avA-Bwql-SieSt2ZGCh5T8NR2WTtMZXJ/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -418,7 +418,7 @@ const resumeSection = {
 
   // Please Provide with Your Podcast embeded Link
   podcast: [
-    "https://drive.google.com/file/d/1boXePV1xn0YGoIBbKfQHE5Kwx4KfWANc/view?usp=sharing"
+    "https://drive.google.com/file/d/1avA-Bwql-SieSt2ZGCh5T8NR2WTtMZXJ/view?usp=sharing"
   ],
   display: true // Set false to hide this section, defaults to true
 };
